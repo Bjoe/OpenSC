@@ -70,7 +70,7 @@
 #endif
 
 /* disable asserts */
-#ifndef SIMCLIST_DEBUG
+#if ! ( defined(SIMCLIST_DEBUG) || defined(NDEBUG) )
 #define NDEBUG
 #endif
 
